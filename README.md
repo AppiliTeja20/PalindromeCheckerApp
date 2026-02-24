@@ -1,38 +1,19 @@
-# Palindrome Checker App – UC13 (Performance Comparison)
+his project explores various ways to check for palindromes in Java, starting from basic strings and moving into advanced data structures. Project Evolution (UC1 - UC13) Foundation: Started with a welcome message (UC1) and simple hardcoded checks (UC2).
 
-## Objective
-The objective of this application is to compare the performance of different palindrome checking approaches by measuring their execution time.
+Basic Logic: Used for loops to reverse strings (UC3) and optimized memory with Two-Pointers and char[] (UC4).
 
-## Use Case
-UC13: Performance Comparison
+Linear Data Structures: Applied Stacks for LIFO logic (UC5), compared Stacks vs. Queues (UC6), and used Deques for double-ended access (UC7).
 
-## Goal
-Run multiple palindrome algorithms and compare their execution time to analyze efficiency.
+Advanced Structures: Built a Linked List checker using midpoint discovery (UC8) and implemented Recursion for a divide-and-conquer approach (UC9).
 
-## Algorithm / Flow
-1. Read the input string from the user
-2. Normalize the string by converting to lowercase and removing spaces
-3. Execute Array (Two-Pointer) palindrome method
-4. Record execution time using System.nanoTime()
-5. Execute Stack-based palindrome method
-6. Record execution time
-7. Execute Deque-based palindrome method
-8. Record execution time
-9. Display palindrome result and time taken for each method
+Real-World Handling: Added Regex to ignore spaces and case sensitivity (UC10).
 
-## Key Concepts Used
-- System.nanoTime()
-- Algorithm Performance Comparison
-- Time Complexity Awareness
-- Multiple Method Execution
-- Efficient String Processing
+Design Patterns: Refactored into an OOP Service (UC11) and implemented the Strategy Pattern to swap algorithms at runtime (UC12).
 
-## Data Structures Used
-- String / Array (Two-Pointer)
-- Stack
-- Deque (ArrayDeque)
+Performance: Benchmarked all methods using System.nanoTime() to find the most efficient solution (UC13).
 
-## How to Compile and Run
-```bash
-javac UseCase13PalindromeCheckerApp.java
-java UseCase13PalindromeCheckerApp
+Technical Summary Author: AppiliTeja20
+
+Core Concepts: LIFO/FIFO, Recursion, Regex, Two-Pointer Technique, Strategy Design Pattern.
+
+Key Data Structures: String, char[], Stack, Queue, Deque, Linked List.
