@@ -1,35 +1,35 @@
-# Palindrome Checker App – UC9 (Recursive Palindrome Checker)
+# Palindrome Checker App – UC10 (Case-Insensitive & Space-Ignored Palindrome)
 
 ## Objective
-The objective of this application is to check whether a given string is a palindrome using recursion while strengthening core programming fundamentals and understanding of recursive logic.
+The objective of this application is to check whether a given string is a palindrome by ignoring spaces and letter case, while strengthening string preprocessing and comparison concepts.
 
 ## Use Case
-UC9: Recursive Palindrome Checker
+UC10: Case-Insensitive & Space-Ignored Palindrome
 
 ## Goal
-Check palindrome using recursion by comparing start and end characters.
+Ignore spaces and case differences while validating whether a string is a palindrome.
 
 ## Algorithm / Flow
 1. Read the input string from the user
-2. Convert the string to lowercase and remove spaces
-3. Call a recursive function with start and end indexes
-4. Compare the first and last characters
-5. If they match, recursively check the remaining substring
-6. Stop when the start index becomes greater than or equal to the end index
+2. Convert the string to lowercase
+3. Remove all spaces using string preprocessing
+4. Initialize two pointers (start and end)
+5. Compare characters from both ends
+6. Move pointers towards the center after each match
 7. If all characters match, it is a palindrome
 8. If any mismatch occurs, it is not a palindrome
 
 ## Key Concepts Used
-- Recursion
-- Base Condition
-- Call Stack
-- String Indexing
-- Efficient Palindrome Validation
+- String Preprocessing
+- Case Normalization
+- Regular Expressions
+- Two-Pointer Technique
+- Efficient String Comparison
 
 ## Data Structure Used
-Call Stack (Recursion)
+String / Character Indexing
 
 ## How to Compile and Run
 ```bash
-javac UseCase9PalindromeCheckerApp.java
-java UseCase9PalindromeCheckerApp
+javac UseCase10PalindromeCheckerApp.java
+java UseCase10PalindromeCheckerApp
