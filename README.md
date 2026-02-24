@@ -1,35 +1,35 @@
-# Palindrome Checker App – UC8 (Linked List Based Palindrome Checker)
+# Palindrome Checker App – UC9 (Recursive Palindrome Checker)
 
 ## Objective
-The objective of this application is to check whether a given string is a palindrome using a singly linked list while improving understanding of data structures and algorithms.
+The objective of this application is to check whether a given string is a palindrome using recursion while strengthening core programming fundamentals and understanding of recursive logic.
 
 ## Use Case
-UC8: Linked List Based Palindrome Checker
+UC9: Recursive Palindrome Checker
 
 ## Goal
-Check palindrome using a singly linked list by reversing the second half and comparing both halves.
+Check palindrome using recursion by comparing start and end characters.
 
 ## Algorithm / Flow
 1. Read the input string from the user
 2. Convert the string to lowercase and remove spaces
-3. Create a singly linked list from the characters
-4. Use fast and slow pointers to find the middle of the list
-5. Reverse the second half of the linked list
-6. Compare the first half and the reversed second half
+3. Call a recursive function with start and end indexes
+4. Compare the first and last characters
+5. If they match, recursively check the remaining substring
+6. Stop when the start index becomes greater than or equal to the end index
 7. If all characters match, it is a palindrome
 8. If any mismatch occurs, it is not a palindrome
 
 ## Key Concepts Used
-- Singly Linked List
-- Node Traversal
-- Fast and Slow Pointer Technique
-- In-Place Reversal
-- Efficient Palindrome Checking
+- Recursion
+- Base Condition
+- Call Stack
+- String Indexing
+- Efficient Palindrome Validation
 
 ## Data Structure Used
-Singly Linked List
+Call Stack (Recursion)
 
 ## How to Compile and Run
 ```bash
-javac UseCase8PalindromeCheckerApp.java
-java UseCase8PalindromeCheckerApp
+javac UseCase9PalindromeCheckerApp.java
+java UseCase9PalindromeCheckerApp
