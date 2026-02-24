@@ -1,35 +1,34 @@
-# Palindrome Checker App – UC10 (Case-Insensitive & Space-Ignored Palindrome)
+# Palindrome Checker App – UC11 (Object-Oriented Palindrome Service)
 
 ## Objective
-The objective of this application is to check whether a given string is a palindrome by ignoring spaces and letter case, while strengthening string preprocessing and comparison concepts.
+The objective of this application is to check whether a given string is a palindrome using an object-oriented approach by encapsulating the palindrome logic inside a separate class.
 
 ## Use Case
-UC10: Case-Insensitive & Space-Ignored Palindrome
+UC11: Object-Oriented Palindrome Service
 
 ## Goal
-Ignore spaces and case differences while validating whether a string is a palindrome.
+Encapsulate palindrome checking logic in a dedicated class and expose a method to validate palindromes.
 
 ## Algorithm / Flow
 1. Read the input string from the user
-2. Convert the string to lowercase
-3. Remove all spaces using string preprocessing
-4. Initialize two pointers (start and end)
-5. Compare characters from both ends
-6. Move pointers towards the center after each match
-7. If all characters match, it is a palindrome
-8. If any mismatch occurs, it is not a palindrome
+2. Create a PalindromeChecker class
+3. Normalize the string by converting to lowercase and removing spaces
+4. Use two-pointer technique to compare characters from start and end
+5. Return true if all characters match
+6. Return false if any mismatch occurs
+7. Display the result in the main application class
 
-## Key Concepts Used
+## Key Concepts Used (OOPS)
+- Encapsulation
+- Single Responsibility Principle
+- Class and Object
+- Method Abstraction
 - String Preprocessing
-- Case Normalization
-- Regular Expressions
-- Two-Pointer Technique
-- Efficient String Comparison
 
 ## Data Structure Used
-String / Character Indexing
+Internal String / Character Indexing
 
 ## How to Compile and Run
 ```bash
-javac UseCase10PalindromeCheckerApp.java
-java UseCase10PalindromeCheckerApp
+javac UseCase11PalindromeCheckerApp.java
+java UseCase11PalindromeCheckerApp
