@@ -1,34 +1,38 @@
-# Palindrome Checker App – UC12 (Strategy Pattern for Palindrome Algorithms)
+# Palindrome Checker App – UC13 (Performance Comparison)
 
 ## Objective
-The objective of this application is to check whether a given string is a palindrome using the Strategy Design Pattern, allowing dynamic selection of different palindrome algorithms.
+The objective of this application is to compare the performance of different palindrome checking approaches by measuring their execution time.
 
 ## Use Case
-UC12: Strategy Pattern for Palindrome Algorithms (Advanced)
+UC13: Performance Comparison
 
 ## Goal
-Choose and apply a palindrome checking algorithm dynamically at runtime using different strategies.
+Run multiple palindrome algorithms and compare their execution time to analyze efficiency.
 
 ## Algorithm / Flow
-1. Define a PalindromeStrategy interface
-2. Implement different strategies like StackStrategy and DequeStrategy
-3. Normalize the input string by converting to lowercase and removing spaces
-4. Allow the user to choose a strategy at runtime
-5. Inject the selected strategy into the service class
-6. Execute the palindrome check using the chosen strategy
-7. Display whether the string is a palindrome or not
+1. Read the input string from the user
+2. Normalize the string by converting to lowercase and removing spaces
+3. Execute Array (Two-Pointer) palindrome method
+4. Record execution time using System.nanoTime()
+5. Execute Stack-based palindrome method
+6. Record execution time
+7. Execute Deque-based palindrome method
+8. Record execution time
+9. Display palindrome result and time taken for each method
 
 ## Key Concepts Used
-- Interface
-- Polymorphism
-- Strategy Design Pattern
-- Dynamic Method Selection
-- Encapsulation
+- System.nanoTime()
+- Algorithm Performance Comparison
+- Time Complexity Awareness
+- Multiple Method Execution
+- Efficient String Processing
 
-## Data Structure Used
-Varies based on strategy (Stack / Deque)
+## Data Structures Used
+- String / Array (Two-Pointer)
+- Stack
+- Deque (ArrayDeque)
 
 ## How to Compile and Run
 ```bash
-javac UseCase12PalindromeCheckerApp.java
-java UseCase12PalindromeCheckerApp
+javac UseCase13PalindromeCheckerApp.java
+java UseCase13PalindromeCheckerApp
