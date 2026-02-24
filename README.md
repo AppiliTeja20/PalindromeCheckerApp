@@ -1,34 +1,34 @@
-# Palindrome Checker App – UC11 (Object-Oriented Palindrome Service)
+# Palindrome Checker App – UC12 (Strategy Pattern for Palindrome Algorithms)
 
 ## Objective
-The objective of this application is to check whether a given string is a palindrome using an object-oriented approach by encapsulating the palindrome logic inside a separate class.
+The objective of this application is to check whether a given string is a palindrome using the Strategy Design Pattern, allowing dynamic selection of different palindrome algorithms.
 
 ## Use Case
-UC11: Object-Oriented Palindrome Service
+UC12: Strategy Pattern for Palindrome Algorithms (Advanced)
 
 ## Goal
-Encapsulate palindrome checking logic in a dedicated class and expose a method to validate palindromes.
+Choose and apply a palindrome checking algorithm dynamically at runtime using different strategies.
 
 ## Algorithm / Flow
-1. Read the input string from the user
-2. Create a PalindromeChecker class
-3. Normalize the string by converting to lowercase and removing spaces
-4. Use two-pointer technique to compare characters from start and end
-5. Return true if all characters match
-6. Return false if any mismatch occurs
-7. Display the result in the main application class
+1. Define a PalindromeStrategy interface
+2. Implement different strategies like StackStrategy and DequeStrategy
+3. Normalize the input string by converting to lowercase and removing spaces
+4. Allow the user to choose a strategy at runtime
+5. Inject the selected strategy into the service class
+6. Execute the palindrome check using the chosen strategy
+7. Display whether the string is a palindrome or not
 
-## Key Concepts Used (OOPS)
+## Key Concepts Used
+- Interface
+- Polymorphism
+- Strategy Design Pattern
+- Dynamic Method Selection
 - Encapsulation
-- Single Responsibility Principle
-- Class and Object
-- Method Abstraction
-- String Preprocessing
 
 ## Data Structure Used
-Internal String / Character Indexing
+Varies based on strategy (Stack / Deque)
 
 ## How to Compile and Run
 ```bash
-javac UseCase11PalindromeCheckerApp.java
-java UseCase11PalindromeCheckerApp
+javac UseCase12PalindromeCheckerApp.java
+java UseCase12PalindromeCheckerApp
